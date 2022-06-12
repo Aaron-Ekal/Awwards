@@ -12,7 +12,6 @@ class Project(models.Model):
   title = models.CharField(max_length=100)
   description = models.CharField(max_length=250)
   image = CloudinaryField('image')
-  # image = models.ImageField(upload_to='profile_pics')
   link = models.URLField(max_length=200)
   country = models.CharField(max_length=100)
   created_at = models.DateField(auto_now_add=True)
