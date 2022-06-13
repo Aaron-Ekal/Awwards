@@ -17,23 +17,25 @@
 
     <div class="logo">
       <a class="nav-link " href="{% url 'homepage' %}">
-        <h2 class="mb-0 title text-white-50">Rate <span class="text-danger">My Work!</span></h2>
+        <h2 class="mb-0 title text-light">Rate <span class="text-danger">My Work!</span></h2>
       </a>
     </div>
     {% if user.is_authenticated%}
     <div class="login-submit">
-      <a href="{% url 'profile' %}" class="f-12 font-weight-bold mr-auto ml-auto nav-link text-white-50">Profile</a>
+      <a href="{% url 'profile' %}" class="f-12 font-weight-bold mr-auto ml-auto nav-link text-light"><h5>Profile</h5></a>
       <a href="{% url 'logout' %}"
-        class="nav-link f-12 font-weight-bold px-4 h-100 d-flex align-items-center text-light">Logout</a>
+        class="nav-link f-12 font-weight-bold px-4 h-100 d-flex align-items-center text-light"><h5>Logout</h5></a>
       <a href="{% url 'new_post' %}"
-        class="nav-link f-12 font-weight-bold px-4 h-100 d-flex align-items-center text-light">Submit Site</a>
+        class="nav-link f-12 font-weight-bold px-4 h-100 d-flex align-items-center text-light"><h5>Submit Site</h5></a>
     </div>
     {% else %}
     <div class="login-submit">
-      <a href="{% url 'login' %}" class="f-12 font-weight-bold mr-3 ml-auto nav-link text-white-50">Register
-        /Login</a>
+      <a href="{% url 'login' %}" class="f-12 font-weight-bold mr-3 ml-auto nav-link text-light"><h5>
+        Register
+        /Login
+      </h5></a>
       <a href="{% url 'new_post' %}"
-        class="nav-link f-12 font-weight-bold px-4 h-100 d-flex align-items-center text-light">Submit Your Site</a>
+        class="nav-link f-12 font-weight-bold px-4 h-100 d-flex align-items-center text-light"><h5>Submit Your Site</h5></a>
     </div>
     {% endif %}
   </div>
