@@ -34,16 +34,4 @@ $(document).ready(function(){
       });
   });
 
-    // $("#ratingForm").hide();
-  
-    // $("#voteBtn").click(function () {
-    //   $("#voteBtn").hide();
-    //   $("#ratingForm").show();
-    // });
-
-    // $("#rateBtn").click(function () {
-    //     $("#ratingForm").hide();
-    //     $("#voteBtn").show();
-    //   });
-
 });
