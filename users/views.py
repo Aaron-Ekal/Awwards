@@ -8,11 +8,8 @@ from rest_framework.response import Response
 from rest_framework import status
 
 # authentication
-from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
 
-# views
-from django.views.generic import DetailView
 
 # models
 from django.contrib.auth.models import User
