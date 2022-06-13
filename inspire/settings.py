@@ -144,15 +144,10 @@ USE_TZ = True
 #cloudinary configurations
 
 cloudinary.config( 
-  cloud_name = "tellem", 
-  api_key = "563315442421128", 
-  api_secret = "9OX4iMFvUbMZXBO1y3Nde7ApGmI" 
+    cloud_name = config('cloud_name'), 
+    api_key = config('api_key'),
+    api_secret = config('api_secret'),
 )
-# cloudinary.config( 
-#     cloud_name = config('cloud_name'), 
-#     api_key = config('api_key'),
-#     api_secret = config('api_secret'),
-# )
 
 
 
